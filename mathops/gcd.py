@@ -6,4 +6,5 @@ def computeGCD(x, y):
 
 if __name__ == "__main__":
     # we can write tests here
+    # only execute if this is the main file running
     assert computeGCD(12, 18) == 6
