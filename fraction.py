@@ -4,6 +4,9 @@ from mathops.gcd import computeGCD as gcd
 class Fraction:
     def __init__(self, numerator, denominator):
 
+        if denominator == 0:
+            raise "Denominator cannot be zero"
+
         self.numerator = numerator // gcd(numerator, denominator)
         self.denominator = denominator // gcd(numerator, denominator)
 
